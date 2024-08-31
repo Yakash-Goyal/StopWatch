@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="h-screen w-full box-border m-0 p-0">
+    <h1 class="text-[5vw] text-center my-[3vw]">StopWatch</h1>
+    <div id="Watch" class="h-[14vw] w-full bg-slate-500 flex text-[14vw] px-[11vw]">
+        <div id="hours" class="w-[18vw] bg-orange-500 h-full flex justify-center items-center">00</div>
+        <p class="flex justify-center items-center mb-[3vw]">:</p>
+        <div id="mins" class="w-[18vw] bg-orange-500 h-full flex justify-center items-center">00</div>
+        <p class="flex justify-center items-center mb-[3vw]">:</p>
+        <div id="secs" class="w-[18vw] bg-orange-500 h-full flex justify-center items-center">00</div>
+        <p class="flex justify-center items-center mb-[3vw]">:</p>
+        <div id="milli" class="w-[18vw] bg-orange-500 h-full flex justify-center items-center">00</div>
+    </div>
+    <div id="Buttons" class="flex flex-wrap mx-[15vw] my-[3vw] gap-[5vw] items-center justify-between">
+        <button onclick="start()" class="">Start</button>
+        <button onclick="stop()">Stop</button>
+        <button onclick="reset()">Reset</button>
+        <button onclick="getTime()">Get Time</button>
+        <button onclick="clearTime()">Clear Time</button>
+    </div>
+    <div id="display">
+        <p></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
