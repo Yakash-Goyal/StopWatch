@@ -56,6 +56,7 @@ function reset() {
 
 function getTime(){
     let time = document.createElement('p');
+    time.className = "text-center bg-[#f5f5f52d]"
     time.innerHTML = `${counthrs.toString().padStart(2, '0')}:${countmin.toString().padStart(2, '0')}:${countsec.toString().padStart(2, '0')}:${(countms-1).toString().padStart(2, '0')}`;
     // parseFloat(count).toFixed(2)
     document.querySelector('#display').appendChild(time);
